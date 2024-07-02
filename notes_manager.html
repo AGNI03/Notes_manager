@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Notes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Notes</h1>
+        <svg id="add_note" onclick="add_note()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>add_note</title>
+            <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+        </svg>
+    </header>
+    <main id="main">
+        <form id="input">
+            <div id="type">
+                <input id="title" type="text" maxlength="26">
+                <textarea id="text"></textarea>
+            </div>
+            <div id="choice">
+                <p id="save" onclick="read_note('create')">SAVE</p>
+                <p id="cancel" onclick="cancel_note()">CANCEL</p>
+            </div>
+        </form>
+
+    </main>
+</body>
+
+</html>
